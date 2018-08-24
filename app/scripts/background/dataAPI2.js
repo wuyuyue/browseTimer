@@ -180,6 +180,7 @@ var dataAPI = {
   staticDataByHost(filter = true,from = null,to = null){
 
     if(from==null)from=this.getCurrentRoundTime();
+    
       //console.log(from,"staticDataByHost");
       //console.log(roundsMap,"staticDataByHost");
     var result={};
@@ -247,7 +248,9 @@ var dataAPI = {
         ...result
       }
       Object.keys(filterResult).forEach(function(h){
-        if((h.indexOf('.')==-1 && extensionURL.indexOf(h)==-1) || !filterResult[h]>0 ){
+        // if((h.indexOf('.')==-1 && extensionURL.indexOf(h)==-1) || !filterResult[h]>0 ){
+        if( !(filterResult[h]>0) ){
+
           delete filterResult[h];
         }
       })

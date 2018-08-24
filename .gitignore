@@ -9,3 +9,6 @@ npm-debug.log
 /app/bundle.js
 /app/bundle.css
 test.html
+/introduce/chrome.pem
+/introduce/360/chrome.crx
+/introduce/360.zip

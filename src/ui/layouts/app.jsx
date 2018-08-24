@@ -100,7 +100,7 @@ class App extends React.Component {
 
 
     return (
-      <IntlProvider locale={this.props.app.appLanguage} messages={chooseLocale(this.props.app.appLanguage)}>
+      <IntlProvider locale={this.props.app.appLanguage} key={this.props.app.appLanguage} messages={chooseLocale(this.props.app.appLanguage)}>
         <div className='root'>
           <AnimationOnPage location={this.props.location}>{this.props.children}</AnimationOnPage>
           <PlayButton/>

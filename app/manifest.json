@@ -11,7 +11,7 @@
   },
   "background": {
     "scripts": [
-      "background.js"
+      "scripts/background.js"
     ],
     "persistent": true
   },
@@ -19,7 +19,7 @@
     {
       "matches": ["<all_urls>"],
       "js": [
-        "content.js"
+        "scripts/content.js"
       ],
       "run_at": "document_start"
     }
@@ -35,6 +35,5 @@
     "default_icon": {
       "48": "images/icon-48.png"
     }
-  },
-  "update_url": "http://upext.chrome.360.cn/intf.php?method=ExtUpdate.query"
+  }
 }

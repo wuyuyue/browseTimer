@@ -5,7 +5,7 @@
   "scripts": {
     "watch": "webpack --watch --config src/webpack.dev.js",
     "dev": "webextension-toolbox dev",
-    "build": "webextension-toolbox build"
+    "build": "cross-env  NODE_ENV=production webpack --config src/webpack.prod.js && webextension-toolbox build"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
